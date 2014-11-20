@@ -1,0 +1,893 @@
+var data={
+    "nodes": [
+        {
+            "color": "green", 
+            "label": "Loyals\n1898974 events\n5% of customers", 
+            "id": "Loyals", 
+            "weight": 1898974, 
+            "title": "Loyals"
+        }, 
+        {
+            "color": "orange", 
+            "label": "Casual\n2537133 events\n7% of customers", 
+            "id": "Casual", 
+            "weight": 2537133, 
+            "title": "Casual"
+        }, 
+        {
+            "color": "lightgrey", 
+            "label": "Not Registered\n25684 events\n0% of customers", 
+            "id": "Not Registered", 
+            "weight": 25684, 
+            "title": "Not Registered"
+        }, 
+        {
+            "color": "lightgrey", 
+            "label": "Early Life\n1972222 events\n5% of customers", 
+            "id": "Early Life", 
+            "weight": 1972222, 
+            "title": "Early Life"
+        }, 
+        {
+            "color": "grey", 
+            "label": "Up and coming\n1359812 events\n3% of customers", 
+            "id": "Up and coming", 
+            "weight": 1359812, 
+            "title": "Up and coming"
+        }, 
+        {
+            "color": "lightgrey", 
+            "label": "Registered but not streamed\n462542 events\n1% of customers", 
+            "id": "Registered but not streamed", 
+            "weight": 462542, 
+            "title": "Registered but not streamed"
+        }, 
+        {
+            "color": "lightgrey", 
+            "label": "Reactivation\n2424053 events\n6% of customers", 
+            "id": "Reactivation", 
+            "weight": 2424053, 
+            "title": "Reactivation"
+        }, 
+        {
+            "color": "lightblue", 
+            "label": "Getting to grips\n1814239 events\n5% of customers", 
+            "id": "Getting to grips", 
+            "weight": 1814239, 
+            "title": "Getting to grips"
+        }, 
+        {
+            "color": "yellow", 
+            "label": "Unconvinced\n1430073 events\n4% of customers", 
+            "id": "Unconvinced", 
+            "weight": 1430073, 
+            "title": "Unconvinced"
+        }, 
+        {
+            "color": "pink", 
+            "label": "Not streamed\n6026118 events\n17% of customers", 
+            "id": "Not streamed", 
+            "weight": 6026118, 
+            "title": "Not streamed"
+        }, 
+        {
+            "color": "red", 
+            "label": "Been and Gone\n3365557 events\n9% of customers", 
+            "id": "Been and Gone", 
+            "weight": 3365557, 
+            "title": "Been and Gone"
+        }, 
+        {
+            "color": "lightgreen", 
+            "label": "Superstars\n159141 events\n0% of customers", 
+            "id": "Superstars", 
+            "weight": 159141, 
+            "title": "Superstars"
+        }, 
+        {
+            "color": "lightgrey", 
+            "label": "No LifeStageSegment\n2851179 events\n8% of customers", 
+            "id": "No LifeStageSegment", 
+            "weight": 2851179, 
+            "title": "No LifeStageSegment"
+        }, 
+        {
+            "color": "lightgrey", 
+            "label": "Active\n2565100 events\n7% of customers", 
+            "id": "Active", 
+            "weight": 2565100, 
+            "title": "Active"
+        }, 
+        {
+            "color": "lightgrey", 
+            "label": "Churn\n2318438 events\n6% of customers", 
+            "id": "Churn", 
+            "weight": 2318438, 
+            "title": "Churn"
+        }, 
+        {
+            "color": "lightgrey", 
+            "label": "Nurture 1\n1919772 events\n5% of customers", 
+            "id": "Nurture 1", 
+            "weight": 1919772, 
+            "title": "Nurture 1"
+        }, 
+        {
+            "color": "lightgrey", 
+            "label": "Nurture 2\n1933434 events\n5% of customers", 
+            "id": "Nurture 2", 
+            "weight": 1933434, 
+            "title": "Nurture 2"
+        }
+    ], 
+    "edges": [
+        {
+            "from": "Active", 
+            "sum_users": 1124881, 
+            "color": "lightgrey", 
+            "value": 43, 
+            "label": "43%", 
+            "to": "Churn"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 142253, 
+            "color": "lightgrey", 
+            "value": 5, 
+            "label": "5%", 
+            "to": "Current Segment"
+        }, 
+        {
+            "from": "Active", 
+            "sum_users": 928968, 
+            "color": "lightgrey", 
+            "value": 36, 
+            "label": "36%", 
+            "to": "No LifeStageSegment"
+        }, 
+        {
+            "from": "Active", 
+            "sum_users": 368998, 
+            "color": "lightgrey", 
+            "value": 14, 
+            "label": "14%", 
+            "to": "Reactivation"
+        }, 
+        {
+            "from": "Churn", 
+            "sum_users": 708284, 
+            "color": "lightgrey", 
+            "value": 30, 
+            "label": "30%", 
+            "to": "Active"
+        }, 
+        {
+            "from": "Churn", 
+            "sum_users": 271440, 
+            "color": "lightgrey", 
+            "value": 11, 
+            "label": "11%", 
+            "to": "Current Segment"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 51889, 
+            "color": "lightgrey", 
+            "value": 2, 
+            "label": "2%", 
+            "to": "No LifeStageSegment"
+        }, 
+        {
+            "from": "Churn", 
+            "sum_users": 1286825, 
+            "color": "lightgrey", 
+            "value": 55, 
+            "label": "55%", 
+            "to": "Reactivation"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 24550, 
+            "color": "lightgrey", 
+            "value": 1, 
+            "label": "1%", 
+            "to": "Current Segment"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 3989, 
+            "color": "lightgrey", 
+            "value": 0, 
+            "label": "0%", 
+            "to": "No LifeStageSegment"
+        }, 
+        {
+            "from": "Early Life", 
+            "sum_users": 1915416, 
+            "color": "lightgrey", 
+            "value": 97, 
+            "label": "97%", 
+            "to": "Nurture 1"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 28267, 
+            "color": "lightgrey", 
+            "value": 1, 
+            "label": "1%", 
+            "to": "Reactivation"
+        }, 
+        {
+            "from": "No LifeStageSegment", 
+            "sum_users": 868411, 
+            "color": "lightgrey", 
+            "value": 30, 
+            "label": "30%", 
+            "to": "Active"
+        }, 
+        {
+            "from": "No LifeStageSegment", 
+            "sum_users": 325435, 
+            "color": "lightgrey", 
+            "value": 11, 
+            "label": "11%", 
+            "to": "Churn"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 47854, 
+            "color": "lightgrey", 
+            "value": 1, 
+            "label": "1%", 
+            "to": "Current Segment"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 3709, 
+            "color": "lightgrey", 
+            "value": 0, 
+            "label": "0%", 
+            "to": "Nurture 1"
+        }, 
+        {
+            "from": "No LifeStageSegment", 
+            "sum_users": 955603, 
+            "color": "lightgrey", 
+            "value": 33, 
+            "label": "33%", 
+            "to": "Nurture 2"
+        }, 
+        {
+            "from": "No LifeStageSegment", 
+            "sum_users": 650167, 
+            "color": "lightgrey", 
+            "value": 22, 
+            "label": "22%", 
+            "to": "Reactivation"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 1474, 
+            "color": "lightgrey", 
+            "value": 5, 
+            "label": "5%", 
+            "to": "Active"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 84, 
+            "color": "lightgrey", 
+            "value": 0, 
+            "label": "0%", 
+            "to": "Churn"
+        }, 
+        {
+            "from": "Not Registered", 
+            "sum_users": 20033, 
+            "color": "lightgrey", 
+            "value": 77, 
+            "label": "77%", 
+            "to": "Current Segment"
+        }, 
+        {
+            "from": "Not Registered", 
+            "sum_users": 2691, 
+            "color": "lightgrey", 
+            "value": 10, 
+            "label": "10%", 
+            "to": "Early Life"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 336, 
+            "color": "lightgrey", 
+            "value": 1, 
+            "label": "1%", 
+            "to": "No LifeStageSegment"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 647, 
+            "color": "lightgrey", 
+            "value": 2, 
+            "label": "2%", 
+            "to": "Nurture 1"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 419, 
+            "color": "lightgrey", 
+            "value": 1, 
+            "label": "1%", 
+            "to": "Nurture 2"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 16720, 
+            "color": "lightgrey", 
+            "value": 0, 
+            "label": "0%", 
+            "to": "Current Segment"
+        }, 
+        {
+            "from": "Nurture 1", 
+            "sum_users": 925640, 
+            "color": "lightgrey", 
+            "value": 48, 
+            "label": "48%", 
+            "to": "No LifeStageSegment"
+        }, 
+        {
+            "from": "Nurture 1", 
+            "sum_users": 977412, 
+            "color": "lightgrey", 
+            "value": 50, 
+            "label": "50%", 
+            "to": "Nurture 2"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 86935, 
+            "color": "lightgrey", 
+            "value": 4, 
+            "label": "4%", 
+            "to": "Active"
+        }, 
+        {
+            "from": "Nurture 2", 
+            "sum_users": 804592, 
+            "color": "lightgrey", 
+            "value": 41, 
+            "label": "41%", 
+            "to": "Churn"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 14912, 
+            "color": "lightgrey", 
+            "value": 0, 
+            "label": "0%", 
+            "to": "Current Segment"
+        }, 
+        {
+            "from": "Nurture 2", 
+            "sum_users": 937199, 
+            "color": "lightgrey", 
+            "value": 48, 
+            "label": "48%", 
+            "to": "No LifeStageSegment"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 89796, 
+            "color": "lightgrey", 
+            "value": 4, 
+            "label": "4%", 
+            "to": "Reactivation"
+        }, 
+        {
+            "from": "Reactivation", 
+            "sum_users": 899996, 
+            "color": "lightgrey", 
+            "value": 37, 
+            "label": "37%", 
+            "to": "Active"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 63446, 
+            "color": "lightgrey", 
+            "value": 2, 
+            "label": "2%", 
+            "to": "Churn"
+        }, 
+        {
+            "from": "Reactivation", 
+            "sum_users": 1457453, 
+            "color": "lightgrey", 
+            "value": 60, 
+            "label": "60%", 
+            "to": "Current Segment"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 3158, 
+            "color": "lightgrey", 
+            "value": 0, 
+            "label": "0%", 
+            "to": "No LifeStageSegment"
+        }, 
+        {
+            "from": "Registered but not streamed", 
+            "sum_users": 308486, 
+            "color": "lightgrey", 
+            "value": 66, 
+            "label": "66%", 
+            "to": "Current Segment"
+        }, 
+        {
+            "from": "Registered but not streamed", 
+            "sum_users": 154056, 
+            "color": "lightgrey", 
+            "value": 33, 
+            "label": "33%", 
+            "to": "Early Life"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 103, 
+            "color": "red", 
+            "value": 0, 
+            "label": "0%", 
+            "to": "Been and Gone"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 84072, 
+            "color": "red", 
+            "value": 2, 
+            "label": "2%", 
+            "to": "Casual"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 105814, 
+            "color": "red", 
+            "value": 3, 
+            "label": "3%", 
+            "to": "Current Segment"
+        }, 
+        {
+            "from": "Been and Gone", 
+            "sum_users": 268906, 
+            "color": "red", 
+            "value": 7, 
+            "label": "7%", 
+            "to": "Getting to grips"
+        }, 
+        {
+            "from": "Been and Gone", 
+            "sum_users": 1940290, 
+            "color": "red", 
+            "value": 57, 
+            "label": "57%", 
+            "to": "Not streamed"
+        }, 
+        {
+            "from": "Been and Gone", 
+            "sum_users": 952356, 
+            "color": "red", 
+            "value": 28, 
+            "label": "28%", 
+            "to": "Unconvinced"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 14016, 
+            "color": "red", 
+            "value": 0, 
+            "label": "0%", 
+            "to": "Up and coming"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 119658, 
+            "color": "orange", 
+            "value": 4, 
+            "label": "4%", 
+            "to": "Been and Gone"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 258, 
+            "color": "orange", 
+            "value": 0, 
+            "label": "0%", 
+            "to": "Casual"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 51948, 
+            "color": "orange", 
+            "value": 2, 
+            "label": "2%", 
+            "to": "Current Segment"
+        }, 
+        {
+            "from": "Casual", 
+            "sum_users": 972885, 
+            "color": "orange", 
+            "value": 38, 
+            "label": "38%", 
+            "to": "Getting to grips"
+        }, 
+        {
+            "from": "Casual", 
+            "sum_users": 799525, 
+            "color": "orange", 
+            "value": 31, 
+            "label": "31%", 
+            "to": "Loyals"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 7110, 
+            "color": "orange", 
+            "value": 0, 
+            "label": "0%", 
+            "to": "Not streamed"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 98, 
+            "color": "orange", 
+            "value": 0, 
+            "label": "0%", 
+            "to": "Superstars"
+        }, 
+        {
+            "from": "Casual", 
+            "sum_users": 338451, 
+            "color": "orange", 
+            "value": 13, 
+            "label": "13%", 
+            "to": "Unconvinced"
+        }, 
+        {
+            "from": "Casual", 
+            "sum_users": 247200, 
+            "color": "orange", 
+            "value": 9, 
+            "label": "9%", 
+            "to": "Up and coming"
+        }, 
+        {
+            "from": "Getting to grips", 
+            "sum_users": 142847, 
+            "color": "lightblue", 
+            "value": 7, 
+            "label": "7%", 
+            "to": "Been and Gone"
+        }, 
+        {
+            "from": "Getting to grips", 
+            "sum_users": 1148251, 
+            "color": "lightblue", 
+            "value": 63, 
+            "label": "63%", 
+            "to": "Casual"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 24684, 
+            "color": "lightblue", 
+            "value": 1, 
+            "label": "1%", 
+            "to": "Current Segment"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 24, 
+            "color": "lightblue", 
+            "value": 0, 
+            "label": "0%", 
+            "to": "Getting to grips"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 36, 
+            "color": "lightblue", 
+            "value": 0, 
+            "label": "0%", 
+            "to": "Loyals"
+        }, 
+        {
+            "from": "Getting to grips", 
+            "sum_users": 230658, 
+            "color": "lightblue", 
+            "value": 12, 
+            "label": "12%", 
+            "to": "Not streamed"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 86217, 
+            "color": "lightblue", 
+            "value": 4, 
+            "label": "4%", 
+            "to": "Unconvinced"
+        }, 
+        {
+            "from": "Getting to grips", 
+            "sum_users": 181522, 
+            "color": "lightblue", 
+            "value": 10, 
+            "label": "10%", 
+            "to": "Up and coming"
+        }, 
+        {
+            "from": "Loyals", 
+            "sum_users": 820790, 
+            "color": "green", 
+            "value": 43, 
+            "label": "43%", 
+            "to": "Casual"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 50780, 
+            "color": "green", 
+            "value": 2, 
+            "label": "2%", 
+            "to": "Current Segment"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 230, 
+            "color": "green", 
+            "value": 0, 
+            "label": "0%", 
+            "to": "Getting to grips"
+        }, 
+        {
+            "from": "Loyals", 
+            "sum_users": 137752, 
+            "color": "green", 
+            "value": 7, 
+            "label": "7%", 
+            "to": "Superstars"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 37631, 
+            "color": "green", 
+            "value": 1, 
+            "label": "1%", 
+            "to": "Unconvinced"
+        }, 
+        {
+            "from": "Loyals", 
+            "sum_users": 851791, 
+            "color": "green", 
+            "value": 44, 
+            "label": "44%", 
+            "to": "Up and coming"
+        }, 
+        {
+            "from": "Not streamed", 
+            "sum_users": 2159234, 
+            "color": "pink", 
+            "value": 35, 
+            "label": "35%", 
+            "to": "Been and Gone"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 201, 
+            "color": "pink", 
+            "value": 0, 
+            "label": "0%", 
+            "to": "Casual"
+        }, 
+        {
+            "from": "Not streamed", 
+            "sum_users": 3495852, 
+            "color": "pink", 
+            "value": 58, 
+            "label": "58%", 
+            "to": "Current Segment"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 347777, 
+            "color": "pink", 
+            "value": 5, 
+            "label": "5%", 
+            "to": "Getting to grips"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 6515, 
+            "color": "pink", 
+            "value": 0, 
+            "label": "0%", 
+            "to": "Unconvinced"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 16539, 
+            "color": "pink", 
+            "value": 0, 
+            "label": "0%", 
+            "to": "Up and coming"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 505, 
+            "color": "lightgreen", 
+            "value": 0, 
+            "label": "0%", 
+            "to": "Casual"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 9231, 
+            "color": "lightgreen", 
+            "value": 5, 
+            "label": "5%", 
+            "to": "Current Segment"
+        }, 
+        {
+            "from": "Superstars", 
+            "sum_users": 108314, 
+            "color": "lightgreen", 
+            "value": 68, 
+            "label": "68%", 
+            "to": "Loyals"
+        }, 
+        {
+            "from": "Superstars", 
+            "sum_users": 41091, 
+            "color": "lightgreen", 
+            "value": 25, 
+            "label": "25%", 
+            "to": "Up and coming"
+        }, 
+        {
+            "from": "Unconvinced", 
+            "sum_users": 892783, 
+            "color": "yellow", 
+            "value": 62, 
+            "label": "62%", 
+            "to": "Been and Gone"
+        }, 
+        {
+            "from": "Unconvinced", 
+            "sum_users": 251567, 
+            "color": "yellow", 
+            "value": 17, 
+            "label": "17%", 
+            "to": "Casual"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 56093, 
+            "color": "yellow", 
+            "value": 3, 
+            "label": "3%", 
+            "to": "Current Segment"
+        }, 
+        {
+            "from": "Unconvinced", 
+            "sum_users": 144523, 
+            "color": "yellow", 
+            "value": 10, 
+            "label": "10%", 
+            "to": "Getting to grips"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 23290, 
+            "color": "yellow", 
+            "value": 1, 
+            "label": "1%", 
+            "to": "Loyals"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 54716, 
+            "color": "yellow", 
+            "value": 3, 
+            "label": "3%", 
+            "to": "Not streamed"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 42, 
+            "color": "yellow", 
+            "value": 0, 
+            "label": "0%", 
+            "to": "Unconvinced"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 7059, 
+            "color": "yellow", 
+            "value": 0, 
+            "label": "0%", 
+            "to": "Up and coming"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 11045, 
+            "color": "grey", 
+            "value": 0, 
+            "label": "0%", 
+            "to": "Been and Gone"
+        }, 
+        {
+            "from": "Up and coming", 
+            "sum_users": 231482, 
+            "color": "grey", 
+            "value": 17, 
+            "label": "17%", 
+            "to": "Casual"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 26752, 
+            "color": "grey", 
+            "value": 1, 
+            "label": "1%", 
+            "to": "Current Segment"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 71825, 
+            "color": "grey", 
+            "value": 5, 
+            "label": "5%", 
+            "to": "Getting to grips"
+        }, 
+        {
+            "from": "Up and coming", 
+            "sum_users": 967809, 
+            "color": "grey", 
+            "value": 71, 
+            "label": "71%", 
+            "to": "Loyals"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 20724, 
+            "color": "grey", 
+            "value": 1, 
+            "label": "1%", 
+            "to": "Not streamed"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 21291, 
+            "color": "grey", 
+            "value": 1, 
+            "label": "1%", 
+            "to": "Superstars"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 8849, 
+            "color": "grey", 
+            "value": 0, 
+            "label": "0%", 
+            "to": "Unconvinced"
+        }, 
+        {
+            "from": "discarded", 
+            "sum_users": 35, 
+            "color": "grey", 
+            "value": 0, 
+            "label": "0%", 
+            "to": "Up and coming"
+        }
+    ]
+}
