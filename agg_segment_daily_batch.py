@@ -3,27 +3,27 @@
 import pyhs2
 
 def aggregate():
-    with pyhs2.connect( host          = 'hive.athena.we7.local',
-                        port          = 10000,
-                        authMechanism = "KERBEROS",
-                        user          = '',
-                        password      = '',
-                        database      = 'davec_sandbox'
+    with pyhs2.connect(host='hive.athena.we7.local',
+                       port=10000,
+                       authMechanism="KERBEROS",
+                       user='',
+                       password='',
+                       database='davec_sandbox'
                       ) as conn:
 
         with conn.cursor() as cur:
 
-            cur.execute('''add file hdfs://athena/user/davec/agg_segment_daily_reducer.py''' )
+            cur.execute('''add file hdfs://athena/user/davec/agg_segment_daily_reducer.py''')
 
             # Hive chooses only one reducer by default (28 minutes). Force 15 (2.5 mins).
-            cur.execute('''set mapred.reduce.tasks=15''' )
+            cur.execute('''set mapred.reduce.tasks=15''')
             cur.execute('''create table if not exists davec_sandbox.agg_segment_daily (
                               segment_date    string,
                               segment_type    string,
                               user_segment    string,
                               users           int
                             )
-                        ''' )
+                        ''')
             cur.execute('''
                             insert overwrite table davec_sandbox.agg_segment_daily
                             select segment_date,
@@ -61,7 +61,7 @@ def aggregate():
                             group by segment_date,
                                      segment_type,
                                      user_segment
-                        ''' )
+                        ''')
 
 if __name__ == "__main__":
     aggregate()

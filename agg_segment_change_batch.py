@@ -3,17 +3,17 @@
 import pyhs2
 
 def aggregate():
-    with pyhs2.connect( host          = 'hive.athena.we7.local',
-                        port          = 10000,
-                        authMechanism = "KERBEROS",
-                        user          = '',
-                        password      = '',
-                        database      = 'davec_sandbox'
+    with pyhs2.connect(host='hive.athena.we7.local',
+                       port=10000,
+                       authMechanism="KERBEROS",
+                       user='',
+                       password='',
+                       database='davec_sandbox'
                       ) as conn:
 
         with conn.cursor() as cur:
 
-            cur.execute('''add file hdfs://athena/user/davec/agg_segment_change_reducer.py''' )
+            cur.execute('''add file hdfs://athena/user/davec/agg_segment_change_reducer.py''')
 
             ## Hive chooses only one reducer by default (28 minutes). Force 15 (2.5 mins).
             #cur.execute('''set mapred.reduce.tasks=15''' )
@@ -24,7 +24,7 @@ def aggregate():
                               change_date      string,
                               users            int
                             )
-                        ''' )
+                        ''')
             cur.execute('''
 
                             insert overwrite table davec_sandbox.agg_segment_change
@@ -63,8 +63,7 @@ def aggregate():
                                                   cast(fact_day as int)
                                    ) user_segments
                                ) segment_changes
-
-                        ''' )
+                        ''')
 
 if __name__ == "__main__":
     aggregate()
