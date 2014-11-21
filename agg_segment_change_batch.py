@@ -16,7 +16,7 @@ def aggregate():
             cur.execute('''add file hdfs://athena/user/davec/agg_segment_change_reducer.py''')
 
             ## Hive chooses only one reducer by default (28 minutes). Force 15 (2.5 mins).
-            #cur.execute('''set mapred.reduce.tasks=15''' )
+            cur.execute('''set mapred.reduce.tasks=15''' )
             cur.execute('''create table if not exists davec_sandbox.agg_segment_change (
                               segment_type     string,
                               before_segment   string,
